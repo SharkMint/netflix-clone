@@ -1,0 +1,116 @@
+.row::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #141414;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.posters{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    text-align: center;
+    max-height: 1020px;
+    transition: transform 450ms;
+   
+    
+
+    
+    
+}
+.posters:hover{
+    transform: scale(1.1);
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 2em;
+    margin: auto;
+
+    
+    
+    
+}
+.row{
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    
+
+}
+
+.movieDetails {
+    
+    align-items: center;
+justify-content:center;
+    text-align: center;
+    max-width: 700px;
+    
+    margin: auto;
+}
+
+.actors{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    padding: 1em;
+    text-align: center;
+    margin: auto;
+    
+    max-height: 10m;
+   
+    
+}
+
+.orderActors{
+    max-width: 100%;
+}
+
+
+.nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    transition-timing-function: ease-in;
+   transition: all 0.5s;
+}
+
+.nav__black{
+    background-color: #111;
+    
+}
+
+.nav__logo{
+    position: fixed;
+    left: 20px;
+    width: 80px;
+    object-fit:  contain;
+}
+.nav__avatar{
+    position: fixed;
+    right: 20px;
+    width: 30px;
+    object-fit:  contain;
+}
+
+
+
+.contenedor{
+    align-items: center;
+    justify-content:center;
+}
