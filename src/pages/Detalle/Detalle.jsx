@@ -15,14 +15,14 @@ const Detalle = () => {
   useEffect(() => {
     axios
       .get(`https://api.themoviedb.org/3/movie/${id}?api_key=${secret_key}`)
-      //  .then((response) => response.json())
+      .then((response) => response.json())
       .then((data) => {
         console.log(data);
         setMovie({ ...data.data });
         getActorsByMovieId();
       });
     console.log(`Este es el id: ${id}`);
-  }, []);
+  });
 
   const getActorsByMovieId = () => {
     fetch(

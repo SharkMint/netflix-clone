@@ -1,13 +1,15 @@
 import React, { useEffect } from "react";
+//import React, { useEffect } from "react";
 import MovieList from "../Principal/MovieList";
-//import Favoritos from './Favoritos';
+//import Favoritos from './Favoritos'
 
 const Favoritos = ({favoritos}) => {
-    useEffect(() => {
     
 
+    useEffect(() => {
     console.log(favoritos);
-    }, []);
+    });
+
 
     return (
         <div>

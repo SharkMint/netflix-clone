@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Principal from "./pages/Principal/Principal";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
+//import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 import secret_key from "./secret";
 import FormSearch from "./shared/FormSearch";
@@ -37,7 +38,7 @@ const App = () => {
     const favorito = movies.filter((movie) => movie.id === id);
     setFavoritos([...favoritos, ...favorito]);
     
-    console.log(favoritos);
+    //console.log(favoritos);
     };
 
     const handleChange = (e) => {

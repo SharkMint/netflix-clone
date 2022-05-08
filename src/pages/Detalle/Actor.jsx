@@ -1,4 +1,5 @@
 const Actor = ({ character, name, profile_path }) => {
+
   return (
     <div className="actors">
       <div className="orderActors">
